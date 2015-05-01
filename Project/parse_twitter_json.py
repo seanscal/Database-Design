@@ -25,7 +25,6 @@ with open('database_bigdata_algorithm.20150318-165942.json') as data_file:
 		favoriteCount = obj["favorite_count"][0]
 		retweetCount = obj["retweet_count"][0]
 		createdAt = obj["created_at"]
-		coordinates = obj["coordinates"]
 
-		print "Name: %35s, \tScreen Name: %15s, \tHashtags: %40s, \tFavorites %6s, \tRetweets: %6s, \tcreatedAt: %10s, \tCoordinates: %s" % \
-			(name,screenName,hashtags,favoriteCount,retweetCount,createdAt,coordinates)
+		print "Name: %35s, \tScreen Name: %15s, \tHashtags: %40s, \tFavorites %6s, \tRetweets: %6s, \tcreatedAt: %10s, \t" % \
+			(name,screenName,hashtags,favoriteCount,retweetCount,createdAt)
